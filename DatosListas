@@ -1,0 +1,40 @@
+package Funciones;
+
+import java.io.Serializable;
+
+/**
+ *
+ * 
+ */
+public class DatosListaDto implements Serializable {
+
+    /**
+     * @return the nombre
+     */
+    public String getNombre() { //obtiene el nombre
+        return nombre;
+    }
+
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) { // Envia el nombre
+        this.nombre = nombre;
+    }
+
+    /**
+     * @return the edad
+     */
+    public String getEdad() {
+        return edad;
+    }
+
+    /**
+     * @param edad the edad to set
+     */
+    public void setEdad(String edad) {
+        this.edad = edad;
+    }
+    private String nombre;
+    private String edad;
+}
